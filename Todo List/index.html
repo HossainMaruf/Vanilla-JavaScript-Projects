@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome using Kit -->
+    <script src="https://kit.fontawesome.com/fd3016b08b.js" crossorigin="anonymous"></script>
+    <title>Todo List</title>
+</head>
+<body>
+
+    <div class="container">
+        <header class="text-center text-light my-4">
+            <h1 class="mb-4">Todo List</h1>
+            <form class="search">
+                <input type="text" name="search" class="form-control m-auto" placeholder="Search Todos" autofocus>
+            </form>
+        </header>
+
+        <ul class="list-group todos mx-auto text-light">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>playing football</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>reading novels</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>go to market</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+        </ul>
+
+        <form action="" class="add text-center my-4">
+            <label for="" class="text-light my-2">Add a new todo...</label>
+            <input type="text" name="add" class="form-control m-auto">
+        </form>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
