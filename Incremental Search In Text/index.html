@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incremental Search In Text</title>
+    <style>
+        body {
+            background-color: rgb(7,7,27);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: #ddd;
+            padding: 10px;
+            min-width: 350px;
+            width: 50%;
+            margin: 50px auto;
+        }
+        .search-container input{
+           width: 50%;
+           height: 30px;
+           border-radius: 5px;
+           padding-left: 10px;
+        }
+        .text-wrapper {
+            background-color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-container">
+          <input onkeyup="Search()" type="text" autofocus placeholder="Search...">
+      </div>
+      <div class="text-wrapper">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+          tenetur eveniet nihil cumque laboriosam dolore veniam temporibus
+          reprehenderit, sed voluptate asperiores sit, incidunt quos saepe atque
+          doloremque veritatis, distinctio beatae tempora nemo. Laborum vel
+          commodi repellat id atque fugit delectus minus nobis, quis esse nemo
+          eaque earum. Quae tenetur modi, ipsa iusto corrupti ipsum architecto
+          fuga provident, error dolorum dignissimos maiores earum doloribus
+          commodi. Magni deserunt laboriosam, molestias architecto nobis
+          corporis repudiandae, velit iste inventore ad ab culpa? Distinctio
+          laborum expedita quos rerum inventore quidem tenetur ad ducimus, fugit
+          adipisci ab eos, debitis obcaecati veritatis aspernatur harum numquam
+          officiis hic.
+        </p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
