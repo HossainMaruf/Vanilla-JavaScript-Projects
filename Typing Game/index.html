@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Typing Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="select-wrapper hide">
+        <label for="difficulty">Difficulty: </label>
+        <select name="difficulty">
+          <option value="easy" selected>Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div class="state hide">
+        <div>Time Left: <strong class="time">10</strong> Sec</div>
+        <div>Score: <strong class="score">0</strong></div>
+      </div>
+      <div class="typing-area hide">
+        <div class="text"></div>
+        <div class="input">
+            <form>
+                <input onkeyup="Checker()" type="text" autofocus keyboard="false"/>
+            </form>
+        </div>
+      </div>
+      <div class="pop-up">
+        <h1>Game Over</h1>
+        <h2>Score <strong class="result"></strong></h2>
+      </div>
+    </div>
+
+    <div class="words">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam cupiditate consequuntur tempora explicabo ipsum repellendus, est ab iste voluptatibus consectetur nisi dolor fugit placeat. Nisi cumque illum ipsa! Cum eos dolorem doloribus. Odio error quis magnam excepturi ab aspernatur perferendis, corrupti in molestias porro cupiditate consectetur libero fugiat optio, ipsum illum quo a id! Nisi quae quibusdam quod et maiores ab itaque, quo corporis minima natus nihil assumenda earum quidem at adipisci omnis provident incidunt quos debitis molestias! Nesciunt magnam, illo dicta eligendi officiis iure animi laudantium sequi impedit quo suscipit earum quos est, voluptate minima blanditiis, aut at quibusdam.</div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
